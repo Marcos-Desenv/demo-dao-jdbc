@@ -43,6 +43,12 @@ public class Program {
 		
 		sellerDao.insert(newSeller);
 		System.out.println("NEW SELLER ID: " + newSeller.getId());
+		
+		System.out.println("TESTE 5 - UPDATE  -----------------------------");
+		seller = sellerDao.findById(1);
+		seller.setName("Bruce Wayne");
+		sellerDao.update(seller);
+		System.out.println("UPDATED");
 
 	}
 
